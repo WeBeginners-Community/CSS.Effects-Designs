@@ -22,44 +22,59 @@ When `TYPE` can be:
 
 **All PRs must include a commit message with the changes description!**
 
-<b> <h3> For the initial start, fork the project and use git clone command to download the repository to your computer </b> </h3>. A standard procedure for working on an issue would be to:
+## How to make a Pull Request
 
-1. `git pull`, before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
+**1.** Fork the <a href="https://github.com/WeBeginners-Community/CSS.Effects-Designs.git">repository</a> by clicking fork symbol at the top right corner.
 
+**2.** Clone the forked repository.
 ```
-$ git pull
-```
-
-2. Create new branch from `master`
-```
-$ git checkout -b [name_of_your_new_branch]
+   git clone https://github.com/<your-github-id>/CSS.Effects-Designs.git
 ```
 
-3. Work - commit - repeat ( be sure to be in your branch )
-
-
-4. Push changes to GitHub
-
+**3.** Navigate to the project directory.
 ```
-$ git push origin [name_of_your_new_branch]
+   cd CSS.Effects-Designs
 ```
 
-5. Submit your changes for review
-   If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-   
-6. Start a Pull Request
-   Now submit the pull request and click on `Create pull request`.
-   
-7. Get a code review approval/reject
+**4.** Create a new branch:
+```
+   git checkout -b <Add your branch name>
+```
 
-8. After approval, merge your PR 
+**5.** Make necessary changes and commit those changes:
 
-9. GitHub will automatically delete the branch after the merge is done. (they can still be restored).
+Add all the changes to the staging area
+```
+git add --a
+```
 
-10. You made it! 🎊
+Now commit those changes using the `git commit` command:
+
+```
+git commit -m "commit message"
+```
+
+**6.** Push changes to GitHub: 
+
+Push your changes using the command `git push`:
+
+```
+git push origin -u <add-your-branch-name>
+```
+
+replacing `<add-your-branch-name>` with the name of the branch you created earlier.
 
 
+**7.** Submit your changes for review: 
 
-Thanks to all the people who have contributed:
+If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
+
+Now submit the pull request.
+
+Soon I'll be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
+
+Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often as a contributor!
+
+## Thanks to all the people who have contributed:
 
 ![Contributors](https://contributors-img.web.app/image?repo=sulagna-dutta-roy/Css-design-projects)

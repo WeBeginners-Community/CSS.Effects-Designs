@@ -25,6 +25,7 @@ Fixes:  #(issue no.)
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
+- [ ] Are you hacktoberfest contributor?
 
 
 # ATTACH SCREEN-SHOTS / DEPLOYMENT LINK
