@@ -1,0 +1,329 @@
+/* layout code begin */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(1, 1, 32);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div{
+  width: 40em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+h1{
+  width: 100%;
+  color: #ffe4c4;
+}
+button {
+  width: 200px;
+  height: 55px;
+  font-size: 16px;
+  transition: all 200ms;
+  cursor: pointer;
+  display: block;
+  margin: 25px;
+}
+/* layout code end */
+
+.btn1{
+  border: 2px solid orange;
+  color: orange;
+  background-color: rgb(0,0,0,0);
+
+}
+.btn1:hover {
+  color: white;
+  border-color: yellow;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 8px -4px yellow;
+}
+.btn2{
+  font-weight: 600;
+  border: 5px solid green;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0,0,0,0);
+
+}
+.btn2:hover {
+  color: greenyellow;
+  border-color: greenyellow;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 8px -4px yellow;
+}
+
+.btn3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.btn3:hover{
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.btn4{
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+.btn4:hover{
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.btn5 {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn5:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn5:active {
+  color: #000
+}
+
+.btn5:active:after {
+  background: transparent;
+}
+
+.btn5:hover:before {
+  opacity: 1;
+}
+
+.btn5:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/* pulse */
+.btn6{
+  border: 2px solid #ef6eae;
+  background: #111;
+  color: #ef6eae;
+}
+
+.btn6:hover, btn6:focus{
+  color: #fff;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 2em #ef6eae; }
+}
+
+/* fillup */
+.btn7{
+  background: #111;
+  border: 2px solid #e4cb58;
+  color: #e4cb58;
+}
+
+.btn7:hover{
+  color: #fff;
+  box-shadow: inset 0 -55px 0 0 #e4cb58;
+}
+/* slide */
+.btn8{
+  border: 2px solid #8fc866;
+  background: #111;
+  color: #8fc866;
+}
+
+.btn8:hover{
+  color: #fff;
+  box-shadow: inset 255px 0 0 0 #8fc866;
+}
+/* offset */
+.btn9{
+  border: 2px solid #19bc8b;
+  background: #111;
+  color: #19bc8b;
+  box-shadow: 
+  0.3em 0.3em 0 0 #19bc8b,
+  inset 0.3em 0.3em 0 0 #19bc8b;
+}
+
+.btn9:hover{
+  color: #fff;
+  box-shadow: 
+  0 0 0 0 #19bc8b,
+  inset 6em 3.5em 0 0 #19bc8b;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+a span {
+  padding: 15px;
+  transition: .5s;
+  position: relative;
+}
+a span:nth-child(1) {
+  color: #fff;
+  background: #262626;
+}
+a span:nth-child(2) {
+  color: #fff;
+  background: #ff3636;
+}
+a span:nth-child(1):before {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff3636;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-50%);
+}
+a:hover span:nth-child(1):before {
+  transform: rotateX(0deg) translateY(0%);
+} 
+a span:nth-child(2):before {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #262626;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+}
+a:hover span:nth-child(2):before {
+  transform: rotateX(0deg) translateY(0%);
+} 
+a  span:nth-child(1):after {
+content: attr(data-attr);
+padding: 15px;
+position: absolute;
+top: 0;
+left: 0;
+background: #262626;
+transform-origin: bottom;
+transform: rotateX(0deg) translateY(0%);
+transition: 0.5s;
+}
+a:hover span:nth-child(1):after {
+transform: rotateX(90deg) translateY(50%);
+}
+a span:nth-child(2):after {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff3636;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: top;
+  transform: rotateX(0deg) translateY(0%);
+}
+a:hover span:nth-child(2):after {
+  transform: rotateX(90deg) translateY(-50%);
+} 
+
+
+.btn11 {
+  background: #3D4C53;
+  margin : 20px auto;
+  width : 200px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background : #26A69A;
+  left : -250px;
+  transition : .3s;
+}
+.btnText {
+  color : white;
+  transition : .3s;
+}
+.btnText2 {
+  margin-top : 63px;
+  margin-right : -130px;
+  color : #FFF;
+}
+.btn11:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+}
+.btn11:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.btn11:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
