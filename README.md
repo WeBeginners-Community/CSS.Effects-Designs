@@ -48,7 +48,13 @@ Add all the changes to the staging area
 git add --a
 ```
 
+
+4. Push changes to GitHub 
+
+or [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://webeginners-csseffectsd-prh1pv4vrnf.ws-us69.gitpod.io/)
+
 Now commit those changes using the `git commit` command:
+
 
 ```
 git commit -m "commit message"
