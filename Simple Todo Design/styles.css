@@ -1,0 +1,136 @@
+body{
+  background-color: rgb(237, 237, 237);
+  margin: 0%;
+}
+.sign{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #00a5ec;
+  color: white;
+  font-size: 26px;
+  font-weight: bolder;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+nav{
+  font-size: xx-large;
+  font-weight: bolder;
+  background-color: white;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 10%;
+  box-shadow: 0px 0px 30px #00000029;
+}
+#text{
+  display: inline;
+  font-size: larger;
+  margin-left: 0.7%;
+  cursor: pointer;
+}
+#task_add{
+  margin-top: 1%;
+  text-align: end;
+  padding-right: 3%;
+}
+#container{
+  margin: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  position:relative;
+}
+#container1,#container3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#container2{
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#task_window,#item_window{
+  background-color: white;
+  width: 500px;
+  height: 230px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  margin-left: 30%;
+  position: absolute;
+  top: 34%;
+  visibility: hidden;
+  z-index: 1;
+}
+#nav_task,#navbar_item{
+  border-bottom: solid 1px lightgray;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-family: monospace;
+  font-size: larger;
+}
+#task_window input,#item_name{
+  display: block;
+  margin-top: 6%;
+  margin-left: 4%;
+  height: 36px;
+  font-size: larger;
+  width: 88%;
+  background-color: rgb(237, 237, 237);
+  border: none;
+  border-radius: 10px;
+  padding-left: 2%;
+}
+#task_window button,#item_window button{
+background-color: #00a5ec;
+border: none;
+color: white;
+margin-top: 4%;
+height: 45px;
+width: 35%;
+position: absolute;
+right: 7%;
+font-size: large;
+border-radius: 10px;
+cursor: pointer;
+}
+.box{
+  background-color: white;
+  min-height: 265px;
+  width: 280px;
+  border-radius: 13px;
+  margin-right: 2%;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+.box:hover{
+  box-shadow: 0px 0px 30px #00000029;
+}
+.box_nav{
+  font-family: cursive;
+  color: #00a5ec;
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: solid 1px lightgray;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+li{
+  padding-bottom: 4%;
+  font-size: larger;
+}
+#box2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(129,126,126,0.7);
+  visibility: hidden;
+}
