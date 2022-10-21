@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+    <span style="color:#00a5ec;">Tasks</span> List
+    </nav>
+    <div id="task_add">
+        <div class="sign">+</div>
+        <div id="text" onclick="add()">Add New Task</div>
+    </div>
+ <!-- container -->
+ <div id="container">
+    <div id="container1">
+    <!-- <div class="box">
+        <div class="box_nav">
+            Trip To Paris
+        </div>
+        <div class="box-item">
+            <ul type="none">
+                <li><input type="checkbox" class="checkBox"> shopping</li>
+                <li><input type="checkbox" class="checkBox"> visit church</li>
+            </ul>
+        </div>
+     </div> -->
+     </div>
+     <div id="container2">
+        <div class="sign" style="background-color: rgb(175, 174, 174);margin-left: 25%;"><img src="Arrow.webp" height="15px" width="17px"></div>
+        <div style="display:inline;font-size: large;margin-left: 1%;font-family: sans-serif;cursor: pointer;" onclick="back()">Back</div>
+        <div class="sign" style="margin-left:20%">+</div>
+        <div style="display:inline;font-size: large;margin-left: 1%;font-family: sans-serif;cursor: pointer;" onclick="add_item()">Add New Item</div>
+        <div id="container3" style="justify-content:center;margin-top: 5%;">
+            <div class="box">
+        <div class="box_nav">
+        </div>
+        <div class="box-item">
+            <ul type="none">
+            </ul>
+        </div>
+     </div>
+
+     <!-- add item box -->
+     <div id="item_window" >
+        <div id="navbar_item">
+            <span>Add New Item</span>
+            <div style="padding-left:70%;font-size:x-large;font-weight: bold;cursor: pointer;display: inline;" onclick="cut2()">X</div>
+        </div>
+        <input type="text" placeholder="TYPE YOUR NEW Item" id="item_name">
+        <button type="submit" onclick="addItem()">+ Add Item</button>
+     </div>
+
+
+     </div>
+     </div>
+ </div>
+
+
+
+ <!-- new task window -->
+ <div id="task_window">
+    <div id="nav_task">
+        <span>Add New Task</span>
+        <div style="padding-left:70%;font-size:x-large;font-weight: bold;cursor: pointer;display: inline;" onclick="cut()">X</div>
+    </div>
+    <input type="text" placeholder="TYPE YOUR NEW TASK" id="task_name">
+    <button type="submit" onclick="addTask()">+ Add Task</button>
+ </div>
+
+
+<!-- transparent cover -->
+<div id="box2"></div>
+
+
+<!-- addition of items to the particular tasks -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
