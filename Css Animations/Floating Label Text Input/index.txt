@@ -1,2 +1,0 @@
-**This project is developed for Floating Label Text Input Animation for websites
-   using html and css.Thus Contributing in Hacktoberfest 2022**
