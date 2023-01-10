@@ -1,0 +1,110 @@
+* {
+			margin: 0;
+			padding: 0;
+			color: inherit;
+			text-decoration: none;
+		}
+		.wrapper {
+			width: 345px;
+			height: 275px;
+			margin: 10% auto 4em;
+			overflow: hidden;
+		}
+		.bird {
+			width: 800px;
+			height: 800px;
+			top: -358px;
+			left: -325px;
+			position: relative;
+		}
+		.wrapper:hover {
+			overflow: visible;
+		}
+		.wrapper:hover .bird > div {
+			border: 1px solid black;
+			opacity: .8;
+		}
+		.bird > div {
+			width: 140px;
+			height: 140px;
+			background: #2daae1;
+			border-radius: 100%;
+			position: absolute;
+		}
+		.bird .tail-cut,
+		.bird .feather-bottom-cut,
+		.bird .feather-middle-cut,
+		.bird .body-top-cut,
+		.bird .mouth-bottom-cut,
+		.bird .mouth-top-cut {
+			background: white;
+		}
+		.bird .body {
+			width: 390px;
+			height: 390px;
+			top: 240px;
+			left: 240px;
+		}
+
+		.bird .tail-cut {
+			width: 285px;
+			height: 285px;
+			left: 198px;
+			top: 315px;
+		}
+		.bird .feather-bottom {
+			left: 366px;
+			top: 430px;
+		}
+		.bird .feather-bottom-cut {
+			left: 310px;
+			top: 384px;
+		}
+		.bird .feather-middle {
+			left: 344px;
+			top: 382px;
+		}
+		.bird .feather-middle-cut {
+			left: 300px;
+			top: 320px;
+		}
+		.bird .feather-top {
+			top: 335px;
+			left: 345px;
+		}
+		.bird .body-top-cut {
+			width: 390px;
+			height: 390px;
+			top: 52px;
+			left: 310px;
+		}
+		.bird .mouth-bottom {
+			width: 130px;
+			height: 130px;
+			top: 302px;
+			left: 536px;
+		}
+		.bird .mouth-bottom-cut {
+			width: 235px;
+			height: 235px;
+			top: 166px;
+			left: 495px;
+		}
+		.bird .mouth-top {
+			width: 130px;
+			height: 130px;
+			top: 279px;
+			left: 527px;
+		}
+		.bird .mouth-top-cut {
+			width: 235px;
+			height: 235px;
+			top: 147px;
+			left: 472px;
+		}
+		.bird .head {
+			width: 135px;
+			height: 135px;
+			top: 358px;
+			left: 493px;
+		}
